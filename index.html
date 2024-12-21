@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    <script>
+        console.log('hello word')
+        console.warn('attention cette action peut avoir des consequences imprevues')
+        console.info('information:le serveur a ete redemare avec succes')
+        console.error("une erreur c'est produite")
+        // alert('alert')
+        var name = 'manel'
+        var age = 29
+        console.log(`je mappelle ${name} et jai ${age}`)
+        console.log(name.length, " la longeur de mon prenom")
+
+        // condition
+        var nombre = '5'
+        if (nombre == 5) {
+            console.log('comparaison partielle:la valeure est apres la contion')
+
+        }
+        else {
+            console.log('les valeurs sont diferentes')
+        }
+        if (nombre === 5) {
+            console.log('comparaison totale:la valeure estle type sont egaux')
+
+        }
+        else {
+            console.log('la valeur ou bien le type sont differents')
+        }
+        //  le === compare la valeure et le type
+        const time = new Date().getHours()
+        var greetting
+        if (time < 10) {
+            greetting = 'bonjour'
+
+        }
+        else if (time < 20) {
+            greetting = 'bonne journee'
+        }
+        else {
+            greetting = 'bonsoir'
+        }
+        console.log(greetting)
+        var bdd = 10
+        var pa = 10
+        var moyenne = (bdd + pa) / 2
+
+        if (moyenne > 10) {
+            console.log('bravo')
+
+        }
+        else if (moyenne === 10) {
+            console.log('passable')
+        }
+        else {
+            console.log('vous allez refaire lannee')
+        }
+        console.log(`votre moyenne est ${moyenne}`)
+        // switch case permet devaluer une variable solon sa valeur
+        var day;
+        switch (new Date().getDay()) {
+            case 0: day = 'dimanche'
+
+                break;
+            case 1: day = 'lundi'
+                break;
+            case 2: day = 'mardi'
+                break;
+            case 3: day = 'mercredi'
+                break;
+            case 4: day = 'jeudi'
+                break;
+            case 5: day = 'vendredi'
+                break;
+            case 6: day = 'samedi'
+                break;
+
+            default: console.log('indefined day')
+                break;
+        }
+        console.log(day)
+        // exercice
+        var color="rouge"
+        switch (color) {
+            case" rouge":console.log('arretez')
+
+                break;
+                case" orange":console.log('attention ')
+
+                break;
+                case" vert":console.log('allez y')
+
+                break;
+            
+
+            default:'couleur inconnue'
+                break;
+        }
+        console.log(color)
+       
+
+
+    </script>
+
+</body>
+
+</html>
