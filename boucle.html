@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les boucles</title>
+</head>
+
+<body>
+    <script>
+        for (var i = 1; i <= 5; i++) {
+            console.log(i)
+
+        }
+        for (var i = 10; i > 0; i--) {
+
+        }
+        console.log(i)
+        var somme = 0;
+        for (var i = 1; i <= 5; i++) {
+            somme+=i
+        }
+        console.log(somme)
+        //exo: fonction nombre premier: tous les nombres premiers de 0 jusqu'a 100
+        function nombreprem() {
+            for (var num = 0; num <= 100; num++) {
+                if (num < 2) {
+                    continue; 
+                }
+                var Premier = true;
+
+                for (var i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i === 0) {
+                        Premier = false;
+                        break;
+                    }
+                }
+
+                if (Premier) {
+                    console.log(num);
+                }
+            }
+        }
+
+       
+        nombreprem();
+    </script>
+
+</body>
+
+</html>

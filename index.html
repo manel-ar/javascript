@@ -18,6 +18,9 @@
         var age = 29
         console.log(`je mappelle ${name} et jai ${age}`)
         console.log(name.length, " la longeur de mon prenom")
+        //  on ane autre methode pour js6 (if cest ?,sinon c'est les  :)
+        // exemple:(time<10)?greeting="bonjour":(time>10)?greeting="bonne journee":greeting="bonsoir"
+
 
         // condition
         var nombre = '5'
@@ -105,6 +108,33 @@
                 break;
         }
         console.log(color)
+        // les fonctions
+        function salutation(){
+            console.log("salut cest manel ")
+          
+        }
+        salutation();
+        function somme(a,b){
+            const c=a+b;
+            return c;
+           
+        }
+        console.log('la somme est ',somme(5,10));
+        function increment (valeur){
+            return valeur+1;
+
+        }
+        console.log('increment de la valeure',increment(2));
+        function test(a){
+            if((a%2)===0){
+                return'pair';
+
+            }
+            else{
+                return'impair';
+            }
+        }
+        console.log(test(4));
        
 
 
