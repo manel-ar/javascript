@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array iterations</title>
+</head>
+
+<body>
+    <h1>javacript arrays</h1>
+    <h2>array iteration methode</h2>
+    <p id="demo"></p>
+    <script>
+        const numbers = [45, 4, 9, 16, 25];
+        function doubleandlog(num) {
+            console.log(num * 2, 'for each');
+        }
+        numbers.forEach(doubleandlog)
+        ////////////
+        const num = [1, 2, 3, 4, 5]
+        function double(num) {
+            return num * 2
+
+        }
+        const doublenumbers = num.map(double)
+        console.log(doublenumbers)
+        /////////////
+        const numbers1 = [1, 2, 3, 4, 5, 6]
+        const filternumbers = numbers1.filter((num) => num % 2 === 0)
+        console.log(filternumbers)
+        ///////////////
+        const numners2 = [1, 2, 3, 4, 5]
+        const somme = numners2.reduce((accumulator, currentvalue) =>
+            accumulator + currentvalue, 1
+            // reduce a 2 parametres currentvalue, accumulator par defaut est 0 si on fait currentvalue,1 ou 2 ,,, il le prends 
+        )
+        console.log(somme)
+        ////////////
+        const numbers3 = [2, 4, 6, 8]
+        const everynumbers = numbers3.every((num) => num % 2 === 0)
+        console.log(everynumbers)
+        // every test tt les elements du tableau la condition si tt les elements satisfaisent la condition renvoie true sinon false
+        const fruits = ['pomme', 'banane', 'orange', 'fraise']
+        const indexoforange = fruits.indexOf('orange')
+        console.log(indexoforange)
+        // si il trouve lelement exite dans le tab retourne son index sinon retourne -1
+        //////////
+        const fruit = fruits.find((f) => f.length > 5)
+        console.log(fruit)
+        // find retourne le 1er element qui satisfait la condition
+        const numbers4 = [10, 20, 30, 40, 50]
+        const index = numbers4.findIndex((num) => num > 25)
+        console.log(index)
+    </script>
+</body>
+
+</html>

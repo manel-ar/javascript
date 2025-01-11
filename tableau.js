@@ -41,4 +41,4 @@ console.log(slicex)
 const y=['banane','orange','citron','pomme','mangue']
 const slicey= y.slice(1,3)
 console.log(slicey)
-//  a la position 1 je vais extraire les 3 elements apres 
+//  a la position 1 je vais extraire les 3-1 elements apres 
