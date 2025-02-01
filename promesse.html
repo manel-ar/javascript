@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promesse</title>
+</head>
+
+<body>
+    <h1>javascript premesse</h1>
+    <p id="demo"></p>
+    <script>
+        function mydislapyer(somme) {
+            document.getElementById('demo').innerHTML = somme}
+            let mypromis = new Promise(function (myresulv, myreject) {
+                let x = 0
+                if (x == 0) {
+                    myresulv('ok')
+
+                }
+                else {
+                    myreject('error')
+                }
+            })
+
+
+        
+        mypromis.then(
+            function (value){
+                mydislapyer(value)
+            },
+            function (error){
+                mydislapyer(error)
+            }
+        )
+        // swegger pour trouver tt la documentation dans le back 
+    </script>
+</body>
+
+</html>
