@@ -31,4 +31,5 @@ const getusers = async () => {
 
 }
 getusers()
-// recuperer les commentaires avecc async await 
+// recuperer les commentaires de l'api avecc async await 
+// pour fusionner les branches :git merge main
